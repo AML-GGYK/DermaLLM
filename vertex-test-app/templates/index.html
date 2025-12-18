@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaLLM</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 520px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .hint {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.75rem;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            resize: vertical;
+            font-family: inherit;
+            box-sizing: border-box;
+            min-height: 100px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button.primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        button.primary:hover {
+            background-color: #0056b3;
+        }
+
+        button.secondary {
+            background-color: #e9ecef;
+        }
+
+        button.secondary:hover {
+            background-color: #d6d8db;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin: 0.75rem 0;
+        }
+
+        .examples button {
+            font-size: 0.75rem;
+            padding: 6px 8px;
+            background: #f1f3f5;
+            border-radius: 999px;
+        }
+
+        .loading {
+            text-align: center;
+            color: #666;
+            margin-top: 0.75rem;
+            display: none;
+        }
+
+        #response-area {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #007bff;
+            white-space: pre-wrap;
+            display: none;
+        }
+
+        .error {
+            border-left-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>DermaLLM</h1>
+
+    <p class="hint">
+        Enter skin concerns, conditions, or products. Results are informational only.
+    </p>
+
+    <div class="examples">
+        <button type="button" onclick="fillExample('Recommend products for dry, sensitive skin')">
+            Dry & Sensitive
+        </button>
+        <button type="button" onclick="fillExample('Best anti-aging skincare routine for fine lines')">
+            Anti-Aging
+        </button>
+        <button type="button" onclick="fillExample('Best routine for acne-prone oily skin')">
+            Acne
+        </button>
+    </div>
+
+
+    <form id="prompt-form">
+        <textarea
+            id="prompt"
+            placeholder="Ask a skincare question..."
+            required
+        ></textarea>
+
+        <div class="actions">
+            <button class="primary" type="submit" id="submit-btn">
+                Generate
+            </button>
+            <button class="secondary" type="button" onclick="clearAll()">
+                Clear
+            </button>
+        </div>
+    </form>
+
+    <div class="loading" id="loader">Thinking…</div>
+    <div id="response-area"></div>
+</div>
+
+<script>
+    const form = document.getElementById('prompt-form');
+    const promptInput = document.getElementById('prompt');
+    const responseArea = document.getElementById('response-area');
+    const loader = document.getElementById('loader');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await sendPrompt();
+    });
+
+    function fillExample(text) {
+        promptInput.value = text;
+        promptInput.focus();
+    }
+
+    function clearAll() {
+        promptInput.value = '';
+        responseArea.style.display = 'none';
+        responseArea.textContent = '';
+    }
+
+    async function sendPrompt() {
+        const prompt = promptInput.value.trim();
+        if (!prompt) return;
+
+        submitBtn.disabled = true;
+        loader.style.display = 'block';
+        responseArea.style.display = 'none';
+        responseArea.classList.remove('error');
+
+        try {
+            const res = await fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ prompt })
+            });
+
+            if (!res.ok) {
+                throw new Error(`Server error (${res.status})`);
+            }
+
+            const data = await res.json();
+            responseArea.textContent = data.response || 'No response returned.';
+            responseArea.style.display = 'block';
+            responseArea.scrollIntoView({ behavior: 'smooth' });
+
+        } catch (err) {
+            responseArea.textContent = 'Error: ' + err.message;
+            responseArea.classList.add('error');
+            responseArea.style.display = 'block';
+        } finally {
+            loader.style.display = 'none';
+            submitBtn.disabled = false;
+        }
+    }
+</script>
+
+</body>
+</html>

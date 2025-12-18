@@ -1,5 +1,5 @@
 # SkinWise
-## Contributors: 
+## Contributors: [Gabriella Chu](https://github.com/gaby-chu), [Yelene Cisse](https://github.com/ymciss0), [Gabrielle Park](https://github.com/gabriellepark), [Kshamaa Suresh](https://github.com/KshamaaS)
 
 SkinWise is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.
 
@@ -107,8 +107,7 @@ A2UI is designed to be a lightweight format, but it fits into a larger ecosystem
 ## Limitations and Future Directions
 
 
-## Team
 
 
-
-
+## Note
+Project created for [COMS4995W032: Applied Machine Learning](https://columbia-coms4995.github.io/aml-fall2025/), taught by Dr. Spencer Luo.

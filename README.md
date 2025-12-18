@@ -1,5 +1,5 @@
 # DermaLLM
-DermaLLM is a Beauty Agent for Skin concerns, ...
+DermaLLM, retrieval-augmented generation (RAG) model, offers a personalized skincare recommendation system that leverages structured product, review, and medical metadata to match user inputs with relevant products.
 
 open-source project, complete with a format
 

@@ -1,11 +1,17 @@
 # DermaLLM
 DermaLLM is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.
 
-open-source project, complete with a format
 
 
-* include screenshot
+<img src="docs/assets/a2ui_gallery_examples.png" alt="Gallery of A2UI components" height="400">
 
+*A gallery of A2UI rendered cards, showing a variety of UI compositions that A2UI can achieve.*
+
+
+
+
+
+[Model Name](https://huggingface.co/spaces/kshamaasuresh/skincare-agent))
 
 
 ## Summary

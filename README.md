@@ -1,46 +1,58 @@
-# DermaLLM
-DermaLLM is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.
+# SkinWise
+## Contributors: 
+
+SkinWise is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.
 
 
 
-<img src="docs/assets/a2ui_gallery_examples.png" alt="Gallery of A2UI components" height="400">
+<img src="src/documents/images/home_page.png" alt="SkinWise Landing Page" height="400">
 
-*A gallery of A2UI rendered cards, showing a variety of UI compositions that A2UI can achieve.*
-
-
+*Home page for SkinWise where users can input skincare-related questions*
 
 
-
-[Model Name](https://huggingface.co/spaces/kshamaasuresh/skincare-agent))
-
-
-## Summary
+[Access the website here!](https://huggingface.co/spaces/kshamaasuresh/skincare-agent))
 
 
 ## Motivation and Goal
 
+The global beauty market is a multi-billion dollar industry, with skincare accounting for nearly half of total sales and continuing to grow every year. However, new products and trendy ingredients are constantly entering the market, making it increasingly difficult for consumers to know which products would best suit their individual needs. Whether someone is trying to address a specific skin concern, manage a condition like acne or eczema, or stay within a budget, navigating the skincare space can be overwhelming.
+
+To address this challenge, we developed SkinWise. ** Our goal is to bridge the gap between complex skincare information and user-friendly recommendations by allowing users to ask questions and receive custom, easy-to-understand responses.**
 
 
 ## Link to video
 
 
 
-## How we innovate
 
 
 TO EDIT
 ## Architecture
 
-The A2UI flow disconnects the generation of UI from the execution of UI:
+The SkinWise workflow brings together rich skincare product and medical data and a powerful AI agent to meet users' individual needs:
 
-1. **Generation:** An Agent (using Gemini or another LLM) generates or uses
-a pre-generated `A2UI Response`, a JSON payload describing the composition
-of UI components and their properties.
-2. **Transport:** This message is sent to the client application
-(via A2A, AG UI, etc.).
-3. **Resolution:** The Client's **A2UI Renderer** parses the JSON.
-4. **Rendering:** The Renderer maps the abstract components
-(e.g., `type: 'text-field'`) to the concrete implementation in the client's codebase.
+1. **Data Input:** 
+2. **Data Analysis:** 
+3. **Model Training:** 
+4. **Model Evaluation:**
+5. **UI Interface:**
+6. **Deployment:**
+
+### File Structure
+
+| Item                                | Schedule                         |
+|-------------------------------------|----------------------------------|
+| [Instructor Notes](completed_module/logistics/032020_EARS6_InstructorNotes.docx)| Read in preparation |
+| Construct calibration stations      | Before term                      |
+| [Pre-project questionairre and instructions](completed_module/components/032020_EARS6_StudentInstructions.docx)| Beginning of the term            |
+| [Create google sheets for each group](completed_module/components/032020_EARS6_ExampleDataStructure.xlsx) | Before data collection           |
+| Measure shoe at calibration station | As needed throughout the term    |
+| Measure and record incidence angle  | Daily                            |
+| Preliminary data and hypothesis ([Example results](completed_module/components/032020_EARS6_ExampleDataStructure.xlsx))     | Due determined by feedback cycle |
+| Final project report                | End of term                      |
+| Video Abstract                      | End of term                      |
+| Reflections                         | End of term                      |
+
 
 ## Dependencies
 
@@ -53,53 +65,15 @@ A2UI is designed to be a lightweight format, but it fits into a larger ecosystem
 
 ## Getting Started
 
-The best way to understand A2UI is to run the samples.
+[Ask SkinWise your skincare-related questions!](https://huggingface.co/spaces/kshamaasuresh/skincare-agent))
 
-### Prerequisites
 
-* Node.js (for web clients)
-* Python (for agent samples)
-* A valid [Gemini API Key](https://aistudio.google.com/) is required for the samples.
 
-### Running the Restaurant Finder Demo
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/google/A2UI.git
-    cd A2UI
-    ```
-
-2. **Set your API Key:**
-
-    ```bash
-    export GEMINI_API_KEY="your_gemini_api_key"
-    ```
-
-3. **Run the Agent (Backend):**
-
-    ```bash
-    cd samples/agent/adk/restaurant_finder
-    uv run .
-    ```
-
-4. **Run the Client (Frontend):**
-    Open a new terminal window:
-
-    ```bash
-    cd samples/client/lit/shell
-    npm install
-    npm run dev
-    ```
-
-For Flutter developers, check out the [GenUI SDK](https://github.com/flutter/genui),
-which uses A2UI under the hood.
-
-CopilotKit has a public [A2UI Widget Builder](https://go.copilotkit.ai/A2UI-widget-builder)
-to try out as well.
-
+## Limitations and Future Directions
 
 
 ## Team
+
+
 
 

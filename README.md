@@ -1,5 +1,5 @@
 # DermaLLM
-DermaLLM, retrieval-augmented generation (RAG) model, offers a personalized skincare recommendation system that leverages structured product, review, and medical metadata to match user inputs with relevant products.
+DermaLLM is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.
 
 open-source project, complete with a format
 

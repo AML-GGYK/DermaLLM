@@ -1,4 +1,11 @@
 # SkinWise
+
+#Important Links:
+- *Dataset* : https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews
+- *Huggingface UI for real time execution* : https://huggingface.co/spaces/kshamaasuresh/skincare-agent
+- *Google Collab code file* : https://drive.google.com/file/d/1YAom8NM-w857kqB-SeNHPIwpFlLKxxj4/view?usp=sharing
+- *Google Drive Link for the video presentation, slide deck and collab code files with supporting documents* : https://drive.google.com/drive/folders/1da77WlskEXwA0Rgegt-ayM938ODsQnno?usp=sharing
+
 ## Contributors: 
 
 SkinWise is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.

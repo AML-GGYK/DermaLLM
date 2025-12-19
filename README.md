@@ -25,7 +25,7 @@ SkinWise is an AI-powered skincare assistant that combines product metadata, rev
 
 The global beauty market is a multi-billion dollar industry, with skincare accounting for nearly half of total sales and continuing to grow every year. However, new products and trendy ingredients are constantly entering the market, making it increasingly difficult for consumers to know which products would best suit their individual needs. Whether someone is trying to address a specific skin concern, manage a condition like acne or eczema, or stay within a budget, navigating the skincare space can be overwhelming.
 
-To address this challenge, we developed SkinWise. ** Our goal is to bridge the gap between complex skincare information and user-friendly recommendations by allowing users to ask questions and receive custom, easy-to-understand responses.**
+To address this challenge, we developed SkinWise. **Our goal is to bridge the gap between complex skincare information and user-friendly recommendations by allowing users to ask questions and receive custom, easy-to-understand responses.**
 
 ## Architecture
 

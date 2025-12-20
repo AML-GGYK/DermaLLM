@@ -17,6 +17,7 @@ SkinWise is an AI-powered skincare assistant that combines product metadata, rev
 - *Google Colab code file*: https://drive.google.com/file/d/1YAom8NM-w857kqB-SeNHPIwpFlLKxxj4/view?usp=sharing 
 - *Google Drive Link for the video presentation, slide deck and colab code files with supporting documents*: https://drive.google.com/drive/folders/1da77WlskEXwA0Rgegt-ayM938ODsQnno?usp=sharing
 - *Video Presentation*: https://drive.google.com/drive/folders/1p99c6gwCJzVLv41xK0c1kEPw9Kd0_vCb?usp=sharing
+- *Final Report*: https://github.com/AML-GGYK/DermaLLM/blob/main/src/docs/AML-GGYK_Final_Project.pdf
 
 **Data Sources**:
 - *Sephora Dataset*: https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews 

@@ -9,6 +9,9 @@ SkinWise is an AI-powered skincare assistant that combines product metadata, rev
 
 *Users can ask SkinWise their skincare-related questions and receive personalized product recs!*
 
+[Ask SkinWise your skincare-related questions!](https://huggingface.co/spaces/kshamaasuresh/skincare-agent)
+
+
 ## Important Links:
 - *Huggingface UI for real time execution*: https://huggingface.co/spaces/kshamaasuresh/skincare-agent 
 - *Google Colab code file*: https://drive.google.com/file/d/1YAom8NM-w857kqB-SeNHPIwpFlLKxxj4/view?usp=sharing 

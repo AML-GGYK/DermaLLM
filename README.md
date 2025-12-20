@@ -1,21 +1,24 @@
-# SkinWise
-### Contributors: [Gabriella Chu](https://github.com/gaby-chu), [Yelene Cisse](https://github.com/ymciss0), [Gabrielle Park](https://github.com/gabriellepark), [Kshamaa Suresh](https://github.com/KshamaaS)
+# 🫧SkinWise
+### Contributors: 🧼[Gabriella Chu](https://github.com/gaby-chu), 🛍️[Yelene Cisse](https://github.com/ymciss0), 🧬[Gabrielle Park](https://github.com/gabriellepark), 🧴[Kshamaa Suresh](https://github.com/KshamaaS)
 
 ## Overview:
 
 SkinWise is an AI-powered skincare assistant that combines product metadata, reviews, and medical knowledge to deliver personalized recommendations to users.
 
-<img src="src/docs/images/skinwise.png" alt="SkinWise Landing Page" height="400">
+<img src="src/docs/images/demo.gif" alt="SkinWise In Action!" width="900">
 
-*Home page for SkinWise where users can input skincare-related questions*
+*Users can ask SkinWise their skincare-related questions and receive personalized product recs!*
+
+[Ask SkinWise your skincare-related questions!](https://huggingface.co/spaces/kshamaasuresh/skincare-agent)
+
 
 ## Important Links:
 - *Huggingface UI for real time execution*: https://huggingface.co/spaces/kshamaasuresh/skincare-agent 
 - *Google Colab code file*: https://drive.google.com/file/d/1YAom8NM-w857kqB-SeNHPIwpFlLKxxj4/view?usp=sharing 
-- *Google Drive Link for the video presentation, slide deck and collab code files with supporting documents*: https://drive.google.com/drive/folders/1da77WlskEXwA0Rgegt-ayM938ODsQnno?usp=sharing
+- *Google Drive Link for the video presentation, slide deck and colab code files with supporting documents*: https://drive.google.com/drive/folders/1da77WlskEXwA0Rgegt-ayM938ODsQnno?usp=sharing
 - *Video Presentation*: https://drive.google.com/drive/folders/1p99c6gwCJzVLv41xK0c1kEPw9Kd0_vCb?usp=sharing
 
-**Data**:
+**Data Sources**:
 - *Sephora Dataset*: https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews 
 - *Dermatology Dataset*: https://huggingface.co/datasets/Carxofa85/dermatology 
 - *Skincare Ingredient Dataset*: https://www.kaggle.com/datasets/amaboh/skin-care-product-ingredients-inci-list 
@@ -25,7 +28,10 @@ SkinWise is an AI-powered skincare assistant that combines product metadata, rev
 
 The global beauty market is a multi-billion dollar industry, with skincare accounting for nearly half of total sales and continuing to grow every year. However, new products and trendy ingredients are constantly entering the market, making it increasingly difficult for consumers to know which products would best suit their individual needs. Whether someone is trying to address a specific skin concern, manage a condition like acne or eczema, or stay within a budget, navigating the skincare space can be overwhelming.
 
-To address this challenge, we developed SkinWise. ** Our goal is to bridge the gap between complex skincare information and user-friendly recommendations by allowing users to ask questions and receive custom, easy-to-understand responses.**
+To address this challenge, we developed SkinWise. **Our goal is to bridge the gap between complex skincare information and user-friendly recommendations by allowing users to ask questions and receive custom, easy-to-understand responses.** SkinWise take skincare questions, symptoms, and product preferences and provide clear, personalized product recommendations. 
+
+<img src="src/docs/images/symptoms.png" alt="Symptom Use Case" height="400">
+
 
 ## Architecture
 
